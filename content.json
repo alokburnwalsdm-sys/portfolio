@@ -50,7 +50,16 @@
       "text": "Vector graphics for logos and brand identity.",
       "short": "Ai"
     },
-    {}
+    {
+      "name": "adobe Premiere Pro",
+      "text": "Professional video editing and storytelling.",
+      "short": "Pr"
+    },
+    {
+      "name": "Adobe After Effects",
+      "text": "Motion graphics, visual effects, and animation.",
+      "short": "Ae"
+    }
   ],
   "social": [
     {
