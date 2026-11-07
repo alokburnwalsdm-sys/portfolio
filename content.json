@@ -1,0 +1,128 @@
+{
+  "hero": {
+    "hello": "Hello, I’m Alok Kumar Burnwal",
+    "l1": "UI/UX designer",
+    "l2": "& brand designer",
+    "intro": "Understanding people's needs and turning them into thoughtful, intuitive, and meaningful digital experiences",
+    "btn": "See my work"
+  },
+  "texts": {
+    "tag": "Designing for people, not just screens.",
+    "cloud": "Design is my craft and impact is my goal",
+    "mq": "UI design,UX flows,Branding,Graphic design,Mobile apps",
+    "csub": "Let’s connect, exchange ideas, and build something valuable",
+    "name": "Alok Kumar Burnwal",
+    "role": "UI/UX & Brand Designer"
+  },
+  "about": "I’m Alok, a UI/UX designer. I design mobile app interfaces and build brand identities through graphic design. My latest project is the UI for a calorie intake app. Replace this text with your own story, location and experience.",
+  "skills": [
+    "Figma",
+    "UI design",
+    "UX research",
+    "Wireframes",
+    "Prototyping",
+    "Branding"
+  ],
+  "steps": [
+    {
+      "title": "Discover",
+      "text": "Understand the user, the goal and the problem to solve."
+    },
+    {
+      "title": "Wireframe",
+      "text": "Map the flow and structure before any colour."
+    }
+  ],
+  "tools": [
+    {
+      "name": "Figma",
+      "text": "Collaborative interface design and prototyping.",
+      "short": "Fg"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "text": "Detailed graphics and visual editing.",
+      "short": "Ps"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "text": "Vector graphics for logos and brand identity.",
+      "short": "Ai"
+    }
+  ],
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "#",
+      "short": "in"
+    },
+    {
+      "name": "Instagram",
+      "url": "#",
+      "short": "Ig"
+    },
+    {
+      "name": "Dribbble",
+      "url": "#",
+      "short": "Dr"
+    },
+    {
+      "name": "Behance",
+      "url": "#",
+      "short": "Be"
+    }
+  ],
+  "contact": {
+    "lead": "Have something in mind?",
+    "cta": "Let’s work together",
+    "email": "alokburnwal.sdm@gamil.com"
+  },
+  "photo": "",
+  "cards": [
+    {
+      "title": "Calorie intake app",
+      "desc": "Mobile app UI that makes daily calorie tracking quick: log a meal, see what’s left for the day.",
+      "tag": "UI design, mobile app",
+      "art": "ring",
+      "img": "",
+      "img2": "",
+      "img3": ""
+    },
+    {
+      "title": "Graphic and brand identity",
+      "desc": "Logo, colour and type systems built to look consistent on every screen and print.",
+      "tag": "Branding, graphic design",
+      "art": "brand",
+      "img": "",
+      "img2": "",
+      "img3": ""
+    },
+    {
+      "title": "Add your next project",
+      "desc": "Replace this card with a new case study or image.",
+      "tag": "Placeholder",
+      "art": "soon",
+      "img": "",
+      "img2": "",
+      "img3": ""
+    },
+    {
+      "title": "New project",
+      "desc": "Describe this project.",
+      "tag": "Tags",
+      "art": "soon",
+      "img": "",
+      "img2": "",
+      "img3": ""
+    },
+    {
+      "title": "New project",
+      "desc": "Describe this project.",
+      "tag": "Tags",
+      "art": "soon",
+      "img": "",
+      "img2": "",
+      "img3": ""
+    }
+  ]
+}

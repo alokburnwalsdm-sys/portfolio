@@ -1,0 +1,87 @@
+media:
+  input: images/uploads
+  output: /images/uploads
+  categories: [image]
+
+content:
+  - name: site
+    label: Website Content
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: hero
+        label: Top Section (Hero)
+        type: object
+        fields:
+          - { name: hello, label: Hello line, type: string }
+          - { name: l1, label: Main heading line 1, type: string }
+          - { name: l2, label: Main heading line 2, type: string }
+          - { name: intro, label: Intro text, type: text }
+          - { name: btn, label: Button text, type: string }
+      - name: texts
+        label: Other Headings and Names
+        type: object
+        fields:
+          - { name: name, label: Your name, type: string }
+          - { name: role, label: Your role, type: string }
+          - { name: tag, label: Tagline, type: string }
+          - { name: cloud, label: Big sentence, type: string }
+          - { name: mq, label: Scrolling strip words (comma separated), type: string }
+          - { name: csub, label: Contact sub-text, type: string }
+      - name: photo
+        label: Your photo
+        type: image
+      - name: about
+        label: About me text
+        type: text
+      - name: skills
+        label: Skills
+        type: string
+        list: true
+      - name: steps
+        label: Process steps
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Step name, type: string }
+          - { name: text, label: Description, type: text }
+      - name: tools
+        label: Tools
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Tool name, type: string }
+          - { name: text, label: Description, type: string }
+          - { name: short, label: Short letters (like Fg), type: string }
+      - name: social
+        label: Social links
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name (LinkedIn etc), type: string }
+          - { name: url, label: Link (https://...), type: string }
+          - { name: short, label: Short letters (like in), type: string }
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - { name: lead, label: Heading, type: string }
+          - { name: cta, label: Button text, type: string }
+          - { name: email, label: Email, type: string }
+      - name: cards
+        label: Projects (Work cards)
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Project title, type: string }
+          - { name: desc, label: Description, type: text }
+          - { name: tag, label: Tags, type: string }
+          - name: art
+            label: Card style if no image
+            type: select
+            options:
+              values: [soon, ring, brand]
+          - { name: img, label: Main image, type: image }
+          - { name: img2, label: Extra image 1, type: image }
+          - { name: img3, label: Extra image 2, type: image }
