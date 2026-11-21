@@ -15,7 +15,7 @@
     "csub": "Let’s connect, exchange ideas, and build something valuable"
   },
   "photo": "/images/uploads/Alok web portfolio image.png",
-  "about": "I’m Alok, a UI/UX designer. I design mobile app interfaces and build brand identities through graphic design. My latest project is the UI for a calorie intake app. Replace this text with your own story, location and experience.",
+  "about": "I am a UI/UX and Graphic Designer creating simple, user-centered digital experiences. I design wireframes, mobile and web interfaces, and prototypes in Figma, along with posters, social media creatives and brand visuals using Photoshop and Illustrator.",
   "skills": [
     "Figma",
     "UI design",
@@ -98,11 +98,18 @@
       ]
     },
     {
-      "title": "Graphic and brand identity",
-      "desc": "Logo, colour and type systems built to look consistent on every screen and print.",
+      "title": "NexCore Technologies – Brand Identity & Logo Design",
+      "desc": "Brand identity and logo design for NexCore Technologies, a next-gen CPU and GPU company delivering powerful, efficient, and affordable computing for gamers, creators, and AI professionals.",
       "tag": "Branding, graphic design",
       "art": "brand",
-      "img": "/images/uploads/Cover image.png"
+      "img": "/images/uploads/Cover page no 1.png",
+      "year": "2026",
+      "tools": "Adobe Photoshop, Adobe Illustrator , figma",
+      "link": "NexCore Technologies – Brand Identity & Logo Design",
+      "link_text": "NexCore Technologies – Brand Identity & Logo Design",
+      "sections": [
+        {}
+      ]
     },
     {
       "title": "Add your next project",
