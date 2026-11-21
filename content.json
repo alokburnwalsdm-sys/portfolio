@@ -14,25 +14,74 @@
     "mq": "UI design,UX flows,Branding,Graphic design,Mobile apps",
     "csub": "Let’s connect, exchange ideas, and build something valuable"
   },
-  "photo": "/images/uploads/WhatsApp Image 2026-11-08 at 12.21.40 AM.jpeg",
+  "photo": "/images/uploads/Alok cv pic.png",
   "about": "I’m Alok, a UI/UX designer. I design mobile app interfaces and build brand identities through graphic design. My latest project is the UI for a calorie intake app. Replace this text with your own story, location and experience.",
-  "skills": ["Figma","UI design","UX research","Wireframes","Prototyping","Branding"],
+  "skills": [
+    "Figma",
+    "UI design",
+    "UX research",
+    "Wireframes",
+    "Prototyping",
+    "Branding"
+  ],
   "steps": [
-    {"title": "Discover","text": "Understand the user, the goal and the problem to solve."},
-    {"title": "Wireframe","text": "Map the flow and structure before any colour."}
+    {
+      "title": "Discover",
+      "text": "Understand the user, the goal and the problem to solve."
+    },
+    {
+      "title": "Wireframe",
+      "text": "Map the flow and structure before any colour."
+    }
   ],
   "tools": [
-    {"name": "Figma","text": "Collaborative interface design and prototyping.","short": "Fg"},
-    {"name": "Adobe Photoshop","text": "Detailed graphics and visual editing.","short": "Ps"},
-    {"name": "Adobe Illustrator","text": "Vector graphics for logos and brand identity.","short": "Ai"},
-    {"name": "adobe Premiere Pro","text": "Professional video editing and storytelling.","short": "Pr"},
-    {"name": "Adobe After Effects","text": "Motion graphics, visual effects, and animation.","short": "Ae"}
+    {
+      "name": "Figma",
+      "text": "Collaborative interface design and prototyping.",
+      "short": "Fg"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "text": "Detailed graphics and visual editing.",
+      "short": "Ps"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "text": "Vector graphics for logos and brand identity.",
+      "short": "Ai"
+    },
+    {
+      "name": "adobe Premiere Pro",
+      "text": "Professional video editing and storytelling.",
+      "short": "Pr"
+    },
+    {
+      "name": "Adobe After Effects",
+      "text": "Motion graphics, visual effects, and animation.",
+      "short": "Ae"
+    }
   ],
   "social": [
-    {"name": "LinkedIn","url": "#","short": "in"},
-    {"name": "Instagram","url": "https://www.instagram.com/thealokburnwal?dlrf=OWEwc3A3bTB2NXVl","short": "Ig"},
-    {"name": "Dribbble","url": "#","short": "Dr"},
-    {"name": "Behance","url": "#","short": "Be"}
+    {
+      "name": "LinkedIn",
+      "url": "#",
+      "short": "in"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/thealokburnwal?dlrf=OWEwc3A3bTB2NXVl",
+      "short": "Ig"
+    },
+    {
+      "name": "Dribbble",
+      "url": "#",
+      "short": "Dr"
+    },
+    {
+      "name": "Behance",
+      "url": "#",
+      "short": "Be"
+    }
   ],
   "contact": {
     "lead": "Have something in mind?",
@@ -40,9 +89,33 @@
     "email": "alokkrburnwal@gmail.com"
   },
   "cards": [
-    {"title": "Calorie intake app","desc": "Mobile app UI that makes daily calorie tracking quick: log a meal, see what’s left for the day.","tag": "UI design, mobile app","art": "ring"},
-    {"title": "Graphic and brand identity","desc": "Logo, colour and type systems built to look consistent on every screen and print.","tag": "Branding, graphic design","art": "brand","img": "/images/uploads/Cover image.png"},
-    {"title": "Add your next project","desc": "Replace this card with a new case study or image.","tag": "Placeholder","art": "soon"},
-    {"title": "New project","desc": "Describe this project.","tag": "Tags","art": "soon"}
+    {
+      "title": "Calorie intake app",
+      "desc": "Mobile app UI that makes daily calorie tracking quick: log a meal, see what’s left for the day.",
+      "tag": "UI design, mobile app",
+      "art": "ring",
+      "sections": [
+        {}
+      ]
+    },
+    {
+      "title": "Graphic and brand identity",
+      "desc": "Logo, colour and type systems built to look consistent on every screen and print.",
+      "tag": "Branding, graphic design",
+      "art": "brand",
+      "img": "/images/uploads/Cover image.png"
+    },
+    {
+      "title": "Add your next project",
+      "desc": "Replace this card with a new case study or image.",
+      "tag": "Placeholder",
+      "art": "soon"
+    },
+    {
+      "title": "New project",
+      "desc": "Describe this project.",
+      "tag": "Tags",
+      "art": "soon"
+    }
   ]
 }
