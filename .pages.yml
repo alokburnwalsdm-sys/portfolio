@@ -1,7 +1,6 @@
 media:
   input: images/uploads
   output: /images/uploads
-  categories: [image]
 
 content:
   - name: site
@@ -16,7 +15,7 @@ content:
         fields:
           - { name: hello, label: Hello line, type: string }
           - { name: l1, label: Main heading line 1, type: string }
-          - { name: l2, label: Main heading line 2, type: string }
+          - { name: l2, label: Main heading line 2 (not shown on site), type: string }
           - { name: intro, label: Intro text, type: text }
           - { name: btn, label: Button text, type: string }
       - name: texts
@@ -60,7 +59,7 @@ content:
         list: true
         fields:
           - { name: name, label: Name (LinkedIn etc), type: string }
-          - { name: url, label: Link (https://...), type: string }
+          - { name: url, label: Link (always start with https://), type: string }
           - { name: short, label: Short letters (like in), type: string }
       - name: contact
         label: Contact
@@ -69,19 +68,48 @@ content:
           - { name: lead, label: Heading, type: string }
           - { name: cta, label: Button text, type: string }
           - { name: email, label: Email, type: string }
+          - { name: cal, label: Cal.com booking link (https://cal.com/yourname/30min), type: string }
+          - { name: cal_btn, label: Book button text, type: string }
+          - { name: page_title, label: Contact page heading, type: string }
+          - { name: page_text, label: Contact page text, type: text }
       - name: cards
         label: Projects (Work cards)
         type: object
         list: true
         fields:
           - { name: title, label: Project title, type: string }
-          - { name: desc, label: Description, type: text }
+          - { name: desc, label: Short description, type: text }
           - { name: tag, label: Tags, type: string }
           - name: art
             label: Card style if no image
             type: select
             options:
               values: [soon, ring, brand]
-          - { name: img, label: Main image, type: image }
-          - { name: img2, label: Extra image 1, type: image }
-          - { name: img3, label: Extra image 2, type: image }
+          - { name: img, label: Cover image (png / jpg / svg / gif / webp), type: image }
+          - name: cover_video
+            label: Cover video (optional - plays on the card instead of the image)
+            type: file
+            options:
+              categories: [video]
+          - { name: role, label: Project page - Your role, type: string }
+          - { name: year, label: Project page - Year, type: string }
+          - { name: tools, label: Project page - Tools used, type: string }
+          - { name: link, label: Project page - Full project link (https://...), type: string }
+          - { name: link_text, label: Project page - Link button text, type: string }
+          - name: sections
+            label: Project page - Sections (left menu + content)
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Section name (e.g. Overview, Problem, Design), type: string }
+              - { name: text, label: Text for this section, type: text }
+              - name: media
+                label: Content for this section (add as many as you want, in order)
+                type: object
+                list: true
+                fields:
+                  - { name: image, label: Image (png / jpg / svg / gif / webp), type: image }
+                  - { name: file, label: File (video mp4/webm, PDF, zip, doc ...), type: file }
+                  - { name: link, label: OR paste a link (YouTube, Vimeo, Figma, Loom, any website), type: string }
+                  - { name: caption, label: Caption (optional), type: string }
+              - { name: images, label: Old images list (leave empty), type: image, list: true, hidden: true }
