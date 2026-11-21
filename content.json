@@ -14,7 +14,7 @@
     "mq": "UI design,UX flows,Branding,Graphic design,Mobile apps",
     "csub": "Let’s connect, exchange ideas, and build something valuable"
   },
-  "photo": "/images/uploads/Alok cv pic.png",
+  "photo": "/images/uploads/Alok web portfolio image.png",
   "about": "I’m Alok, a UI/UX designer. I design mobile app interfaces and build brand identities through graphic design. My latest project is the UI for a calorie intake app. Replace this text with your own story, location and experience.",
   "skills": [
     "Figma",
@@ -64,7 +64,7 @@
   "social": [
     {
       "name": "LinkedIn",
-      "url": "#",
+      "url": "https://www.linkedin.com/in/alok-burnwal-98837044b",
       "short": "in"
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "name": "Behance",
-      "url": "#",
+      "url": "https://www.behance.net/alokburnwal",
       "short": "Be"
     }
   ],
@@ -90,7 +90,6 @@
   },
   "cards": [
     {
-      "title": "Calorie intake app",
       "desc": "Mobile app UI that makes daily calorie tracking quick: log a meal, see what’s left for the day.",
       "tag": "UI design, mobile app",
       "art": "ring",
