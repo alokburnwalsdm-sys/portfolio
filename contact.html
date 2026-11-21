@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Alok Kumar Burnwal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--fd:Manrope,system-ui,sans-serif;--fb:Inter,system-ui,sans-serif;--bg:#111111;--ink:#ffffff;--mut:#c4c4c4;--red:#e0161f;--line:#2e2e2e;--card:#1a1a1a}
+*{box-sizing:border-box;margin:0}
+html,body{min-height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);display:flex;flex-direction:column;min-height:100vh;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+.top{padding:22px clamp(20px,5vw,64px);display:flex;justify-content:space-between;align-items:center}
+.top a{text-decoration:none;font-family:var(--fd);font-weight:700}
+.back{color:var(--mut);font-size:.95rem}
+.back:hover{color:var(--ink)}
+main{flex:1;display:grid;place-items:center;padding:30px clamp(20px,5vw,64px) 70px}
+.box{max-width:640px;width:100%;text-align:center}
+.dot{display:inline-flex;align-items:center;gap:10px;color:var(--mut);margin-bottom:22px}
+.dot i{width:10px;height:10px;border-radius:50%;background:var(--red);display:block}
+h1{font-family:var(--fd);font-weight:800;font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.1;margin-bottom:18px}
+p{color:var(--mut);line-height:1.6;font-size:1.05rem;margin-bottom:34px}
+.btn{display:inline-flex;align-items:center;gap:14px;border-radius:999px;background:var(--red);color:#fff;padding:12px 12px 12px 30px;text-decoration:none;font-family:var(--fd);font-weight:700;font-size:1.05rem;box-shadow:0 10px 40px rgba(224,22,31,.35);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn .ar{width:40px;height:40px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font-size:1.1rem}
+.mail{margin-top:30px;color:var(--mut)}
+.mail a{color:var(--ink);font-weight:600}
+</style>
+</head>
+<body>
+<div class="top"><a href="index.html" id="nm">Alok Kumar Burnwal</a><a class="back" href="index.html">&larr; Back to home</a></div>
+<main>
+  <div class="box">
+    <div class="dot"><i></i><span>Contact me</span></div>
+    <h1 id="ttl">Let&rsquo;s talk</h1>
+    <p id="txt">Have a project or an idea? Book a quick call and we&rsquo;ll talk it through.</p>
+    <a class="btn" id="cal" href="https://cal.com" target="_blank" rel="noopener"><span id="calt">Book a call</span><span class="ar" aria-hidden="true">&nearr;</span></a>
+    <div class="mail" id="mailw" hidden>Or email me at <a id="mail" href="#"></a></div>
+  </div>
+</main>
+<script>
+fetch('content.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(c){
+  var k=c.contact||{},t=c.texts||{};
+  if(t.name){document.getElementById('nm').textContent=t.name}
+  if(k.page_title)document.getElementById('ttl').textContent=k.page_title;
+  if(k.page_text)document.getElementById('txt').textContent=k.page_text;
+  if(k.cal_btn)document.getElementById('calt').textContent=k.cal_btn;
+  if(k.cal&&/^https:\/\//.test(k.cal))document.getElementById('cal').href=k.cal;
+  if(k.email){var m=document.getElementById('mail');m.textContent=k.email;m.href='mailto:'+k.email;document.getElementById('mailw').hidden=false}
+}).catch(function(){});
+</script>
+</body>
+</html>
