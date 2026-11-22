@@ -92,7 +92,7 @@
     {
       "desc": "Mobile app UI that makes daily calorie tracking quick: log a meal, see what’s left for the day.",
       "tag": "UI design, mobile app",
-      "art": "ring",
+      "art": "soon",
       "sections": [
         {}
       ]
@@ -108,7 +108,24 @@
       "link": "https://www.behance.net/gallery/258438993/NexCore-Technologies-Brand-Identity-Logo-Design",
       "link_text": "View on Behance",
       "sections": [
-        {}
+        {
+          "title": "project overview",
+          "media": [
+            {
+              "image": "/images/uploads/Cover page no 1-1.png"
+            },
+            {
+              "image": "/images/uploads/project over view 2.png"
+            },
+            {
+              "image": "/images/uploads/led poster 3.png"
+            },
+            {
+              "image": "/images/uploads/problem statement no 4.png"
+            },
+            {}
+          ]
+        }
       ]
     },
     {
