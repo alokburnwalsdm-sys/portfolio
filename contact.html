@@ -3,10 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e0161f'/%3E%3Ctext x='32' y='45' font-family='Arial' font-weight='700' font-size='38' text-anchor='middle' fill='white'%3EA%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#111111">
+<meta name="description" content="Get in touch or book a call with Alok Kumar Burnwal, UI/UX and brand designer.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Alok Kumar Burnwal">
+<meta property="og:description" content="Get in touch or book a call with Alok Kumar Burnwal, UI/UX and brand designer.">
 <title>Contact | Alok Kumar Burnwal</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--fd:Manrope,system-ui,sans-serif;--fb:Inter,system-ui,sans-serif;--bg:#111111;--ink:#ffffff;--mut:#c4c4c4;--red:#e0161f;--line:#2e2e2e;--card:#1a1a1a}
+:root{--fd:'Poppins',system-ui,sans-serif;--fb:'IBM Plex Sans',system-ui,sans-serif;--bg:#111111;--ink:#ffffff;--mut:#c4c4c4;--red:#e0161f;--line:#2e2e2e;--card:#1a1a1a}
 *{box-sizing:border-box;margin:0}
 html,body{min-height:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--fb);display:flex;flex-direction:column;min-height:100vh;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -26,10 +32,84 @@ p{color:var(--mut);line-height:1.6;font-size:1.05rem;margin-bottom:34px}
 .btn .ar{width:40px;height:40px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font-size:1.1rem}
 .mail{margin-top:30px;color:var(--mut)}
 .mail a{color:var(--ink);font-weight:600}
+.cfoot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:18px;gap:10px}
+.cf{--d-bg:#111111;--d-ink:#ffffff;--d-mut:#c4c4c4;--d-line:#2e2e2e;background:var(--d-bg);color:var(--d-ink);padding:clamp(60px,9vw,110px) 5vw calc(70px + env(safe-area-inset-bottom,0px));margin-top:40px;position:relative;overflow:hidden}
+.cf::before{content:"";position:absolute;left:-10%;top:-20%;width:60%;height:120%;background:radial-gradient(closest-side,rgba(200,52,43,.22),transparent);pointer-events:none}
+.cf .fg{position:relative;display:grid;grid-template-columns:1.25fr 1fr;gap:6vw;align-items:start;max-width:1300px;margin:0 auto}
+.cf .fl{display:flex;flex-direction:column;gap:40px}
+.cf .fh{font-family:var(--fd);font-weight:500;font-size:clamp(2.6rem,7vw,6rem);line-height:1;letter-spacing:-.045em}
+.cf .fs2{color:var(--d-mut);font-size:1.15rem;max-width:34ch}
+.cf .fr{display:grid;gap:36px;align-content:start}
+.cf .prof{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.cf .avw{display:flex;align-items:center;flex:none}
+.cf .avw i{display:block;width:26px;border-radius:100% 0 0 100%/50% 0 0 50%;background:var(--red);margin-right:-8px}
+.cf .avw i:nth-child(1){height:70px;opacity:.3}
+.cf .avw i:nth-child(2){height:92px;opacity:.55}
+.cf .avc{position:relative;z-index:1;width:100px;height:100px;border-radius:50%;background:#262626 center/cover no-repeat;display:grid;place-items:center;font-family:var(--fd);font-weight:800;font-size:2.4rem;color:var(--red)}
+.cf .pinf b{display:block;font-family:var(--fd);font-size:1.5rem;letter-spacing:-.02em}
+.cf .pinf span{color:var(--d-mut)}
+.cf .fsoc{display:flex;gap:10px;margin-top:14px}
+.cf .fsoc a{width:40px;height:40px;border-radius:50%;border:1px solid var(--d-line);display:grid;place-items:center;color:var(--d-ink);text-decoration:none;font-size:.8rem;font-family:var(--fd);font-weight:800;transition:background .2s,border-color .2s}
+.cf .fsoc a:hover{background:var(--red);border-color:var(--red)}
+.cf .fsoc svg{width:18px;height:18px}
+.cf .lab{display:flex;align-items:center;gap:10px;color:var(--d-mut);margin-bottom:14px}
+.cf .lab i{width:10px;height:10px;border-radius:50%;background:var(--red);display:block}
+.cf .fem{font-family:var(--fd);font-weight:600;font-size:clamp(1.1rem,2vw,1.6rem);letter-spacing:-.03em;line-height:1.1;text-decoration:none;word-break:break-all;display:block;color:var(--d-ink);transition:color .2s}
+.cf .fem:hover{color:var(--red)}
+.cf .pill{display:inline-flex;align-items:center;gap:20px;padding:9px 9px 9px 28px;justify-self:start;box-shadow:0 10px 40px rgba(224,22,31,.4);background:var(--red);color:#fff}
+.cf .pill .ar{width:44px;height:44px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font-size:1.2rem}
+@media(max-width:820px){.cf .fg{grid-template-columns:1fr;gap:44px}}
+
+:root{--glow:224,22,31}
+.btn:not(.ghost),.nav .cm,.workg .allc{box-shadow:0 0 0 1px rgba(var(--glow),.28),0 8px 30px rgba(var(--glow),.5),0 0 70px rgba(var(--glow),.25);transition:transform .25s,box-shadow .3s}
+.btn:not(.ghost):hover,.nav .cm:hover,.workg .allc:hover{box-shadow:0 0 0 1px rgba(var(--glow),.45),0 10px 42px rgba(var(--glow),.7),0 0 96px rgba(var(--glow),.38)}
+
+.cf .fnote{display:none;color:var(--d-mut);line-height:1.6;font-size:.98rem;max-width:32ch;margin:0}
+@media(max-width:640px){
+ .cf{padding:64px 22px 56px;text-align:center}
+ .cf .fg{grid-template-columns:1fr;gap:30px}
+ .cf .fl{min-height:0;align-items:center;gap:14px}
+ .cf .fh{font-size:clamp(2rem,9.4vw,2.7rem);line-height:1.12;letter-spacing:-.03em;text-align:center}
+ .cf .fs2{margin:0 auto;font-size:1.02rem;text-align:center;max-width:30ch}
+ .cf .fr{gap:22px;justify-items:center;border-top:1px solid rgba(255,255,255,.14);padding-top:28px}
+ .cf .prof{justify-content:center;flex-wrap:nowrap;gap:14px;text-align:left}
+ .cf .avc{width:72px;height:72px;font-size:1.8rem}
+ .cf .avw i{width:18px;margin-right:-6px}
+ .cf .avw i:nth-child(1){height:46px}.cf .avw i:nth-child(2){height:60px}
+ .cf .pinf b{font-size:1.1rem}.cf .pinf span{font-size:.85rem}
+ .cf .fsoc{margin-top:8px;gap:6px}
+ .cf .fsoc a{width:30px;height:30px;border:0}
+ .cf .lab{justify-content:center;margin-bottom:8px;font-size:.9rem}
+ .cf .lab:before,.cf .lab i{display:none}
+ .cf .fem{font-size:clamp(1.25rem,6.2vw,1.7rem)!important;text-align:center;word-break:normal;overflow-wrap:anywhere}
+ .cf .fnote{display:block;text-align:center;margin:0 auto}
+ .cf .pill{justify-self:center;margin:6px auto 0}
+}
+
+.cf{margin-top:0}
+
+.burger,.x{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);cursor:pointer;position:relative;flex:none;padding:0}
+.burger{display:none}
+.burger span,.x span{position:absolute;left:13px;right:13px;height:2px;background:#ffffff;border-radius:2px}
+.burger span:first-child{top:16px}.burger span:last-child{top:25px}
+.x span{top:21px}.x span:first-child{transform:rotate(45deg)}.x span:last-child{transform:rotate(-45deg)}
+.menu{--bg:#111111;--ink:#ffffff;--mut:#c4c4c4;position:fixed;inset:0;z-index:30;background:var(--bg);color:var(--ink);display:flex;flex-direction:column;padding:calc(14px + env(safe-area-inset-top,0px)) 5vw 30px;visibility:hidden;opacity:0;transition:opacity .25s,visibility .25s}
+.menu.open{visibility:visible;opacity:1}
+.mtop{display:flex;justify-content:space-between;align-items:center}
+.mtop b{font-family:var(--fd);font-weight:700;font-size:1.05rem}
+.mbody{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;text-align:center}
+.mbody>a:not(.btn){font-family:var(--fd);font-weight:600;font-size:2rem;text-decoration:none;color:inherit}
+.mbody>a:not(.btn):hover{color:var(--red)}
+.mbody p{color:var(--mut)}.mbody p span{color:var(--ink);font-size:1.05rem}
+.mbody .btn{background:var(--red);color:#fff;padding:14px 28px;text-decoration:none;border-radius:999px;font-family:var(--fd);font-weight:700}
+@media(max-width:760px){.nav .cm,.nav .bk,.top .back{display:none}.nav .burger,.top .burger{display:block}}
+
+a:focus-visible,button:focus-visible{outline:2px solid #e0161f;outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4,p,.fem,.fh,.d,.tx,.row h2{overflow-wrap:anywhere}
 </style>
 </head>
 <body>
-<div class="top"><a href="index.html" id="nm">Alok Kumar Burnwal</a><a class="back" href="index.html">&larr; Back to home</a></div>
+<div class="top"><a href="index.html" id="nm">Alok Kumar Burnwal</a><a class="back" href="index.html">&larr; Back to home</a><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div>
 <main>
   <div class="box">
     <div class="dot"><i></i><span>Contact me</span></div>
@@ -39,7 +119,26 @@ p{color:var(--mut);line-height:1.6;font-size:1.05rem;margin-bottom:34px}
     <div class="mail" id="mailw" hidden>Or email me at <a id="mail" href="#"></a></div>
   </div>
 </main>
+<footer class="cf" id="cf">
+  <div class="fg">
+    <div class="fl"><h2 class="fh" id="cf-lead">Have something in mind?</h2><p class="fs2" id="cf-sub">Let&rsquo;s connect, exchange ideas, and build something valuable</p></div>
+    <div class="fr">
+      <div class="prof"><div class="avw"><i></i><i></i><i></i><div class="avc" id="cf-av" role="img" aria-label="Profile photo"><span id="cf-avl">A</span></div></div><div class="pinf"><b id="cf-name">Alok Kumar Burnwal</b><span id="cf-role">UI/UX &amp; Brand Designer</span><div class="fsoc" id="cf-soc"></div></div></div>
+      <div><div class="lab"><i></i>Contact me</div><a class="fem" id="cf-em" href="contact.html"></a></div>
+      <p class="fnote" id="cf-note"></p>
+      <a class="btn pill" href="contact.html">Contact me<span class="ar" aria-hidden="true">&nearr;</span></a>
+    </div>
+  </div>
+</footer>
+<div class="menu" id="menu" aria-hidden="true"><div class="mtop"><b id="m-name">Alok Kumar Burnwal</b><button class="x" aria-label="Close menu"><span></span><span></span></button></div><div class="mbody"><a href="index.html#work">Work</a><a href="projects.html">All projects</a><a href="index.html#about">About</a><a href="index.html#process">Process</a><a href="contact.html">Contact</a><p>Email:<br><span id="m-email"></span></p><a class="btn" href="contact.html">Contact me</a></div></div>
 <script>
+var $=function(i){return document.getElementById(i)};
+var _mn=$('menu'),_bg=$('burger');
+if(_mn&&_bg){var _mo=function(o){_mn.classList.toggle('open',o);_mn.setAttribute('aria-hidden',!o);_bg.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''};
+  _bg.onclick=function(){_mo(true)};_mn.querySelector('.x').onclick=function(){_mo(false)};
+  _mn.addEventListener('click',function(e){if(e.target.closest('a'))_mo(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')_mo(false)})}
+
 fetch('content.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(c){
   var k=c.contact||{},t=c.texts||{};
   if(t.name){document.getElementById('nm').textContent=t.name}
@@ -48,6 +147,16 @@ fetch('content.json',{cache:'no-store'}).then(function(r){return r.json()}).then
   if(k.cal_btn)document.getElementById('calt').textContent=k.cal_btn;
   if(k.cal&&/^https:\/\//.test(k.cal))document.getElementById('cal').href=k.cal;
   if(k.email){var m=document.getElementById('mail');m.textContent=k.email;m.href='mailto:'+k.email;document.getElementById('mailw').hidden=false}
+  var K=c.contact||{},T=c.texts||{};
+  if(K.lead)$('cf-lead').textContent=K.lead;if(T.csub)$('cf-sub').textContent=T.csub;
+  if(T.name)$('cf-name').textContent=T.name;if(T.role)$('cf-role').textContent=T.role;
+  if(c.photo){$('cf-av').style.backgroundImage='url("'+String(c.photo).replace(/"/g,'%22')+'")';$('cf-avl').style.display='none'}
+  if(K.email){var em=$('cf-em');em.textContent=K.email;em.href='mailto:'+K.email}
+  if($('cf-note'))$('cf-note').textContent=K.note||'Have a project, an idea or a role in mind? Send me a message and let\u2019s talk.';
+  if($('m-email')&&K.email)$('m-email').textContent=K.email;if($('m-name')&&T.name)$('m-name').textContent=T.name;
+  var SOCIC={linkedin:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="9" width="3.6" height="12"/><circle cx="4.8" cy="4.8" r="2.1"/><path d="M10 9h3.4v1.7c.6-1.1 1.9-2 3.8-2 3.5 0 4.3 2.3 4.3 5.3V21h-3.6v-6.2c0-1.5-.1-3-2-3s-2.3 1.4-2.3 2.9V21H10z"/></svg>',instagram:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>',dribbble:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M5.5 5.5c5 1 9 5.5 11 12.5M2.7 11.3c5.5.3 11-1.2 15.6-5.3M8.5 21c1.5-5 4.5-8.5 10.5-9.7"/></svg>',behance:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M2 6h5.6c2 0 3.2 1 3.2 2.6 0 1.1-.6 1.9-1.5 2.3 1.3.3 2.1 1.3 2.1 2.7 0 1.9-1.4 3.1-3.6 3.1H2zM4.4 8v2.3h2.6c.8 0 1.2-.4 1.2-1.1S7.8 8 7 8zM4.4 12.2v2.6h2.9c.9 0 1.4-.5 1.4-1.3s-.5-1.3-1.4-1.3z"/><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="17.6" cy="14" r="3"/><path d="M14.6 14h6M14.6 7.6h6"/></g></svg>'};
+  (c.social||[]).forEach(function(x){var a=document.createElement('a'),u=String(x.url||'#');if(!/^(https?:|mailto:|#)/.test(u))u='#';a.href=u;a.setAttribute('aria-label',x.name||'');if(/^https?:/.test(u)){a.target='_blank';a.rel='noopener'}var ic=SOCIC[String(x.name).toLowerCase()];if(ic)a.innerHTML=ic;else a.textContent=x.short||String(x.name||'').slice(0,2);$('cf-soc').appendChild(a)});
+  var pb=document.querySelector('.cf .pill');if(pb&&K.cal&&/^https:\/\//i.test(K.cal)){pb.href=K.cal;pb.target='_blank';pb.rel='noopener';pb.firstChild.textContent=K.cal_btn||'Book a call'}
 }).catch(function(){});
 </script>
 </body>

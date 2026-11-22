@@ -68,6 +68,7 @@ content:
           - { name: lead, label: Heading, type: string }
           - { name: cta, label: Button text, type: string }
           - { name: email, label: Email, type: string }
+          - { name: note, label: Footer small text (shown under the email on phones), type: text }
           - { name: cal, label: Cal.com booking link (https://cal.com/yourname/30min), type: string }
           - { name: cal_btn, label: Book button text, type: string }
           - { name: page_title, label: Contact page heading, type: string }
@@ -101,8 +102,12 @@ content:
             type: object
             list: true
             fields:
-              - { name: title, label: Section name (e.g. Overview, Problem, Design), type: string }
-              - { name: text, label: Text for this section, type: text }
+              - { name: title, label: Menu name - shown in the LEFT menu (e.g. Overview, Problem, Design), type: string }
+              - { name: heading, label: Heading above the text (optional - leave empty to use the menu name), type: string }
+              - name: text
+                label: Text for this section
+                type: text
+                description: "Tip: **bold**, *italic*, a line starting with - makes a bullet, ## makes a small heading, [link text](https://...) makes a link. Leave an empty line for a new paragraph."
               - name: media
                 label: Content for this section (add as many as you want, in order)
                 type: object
