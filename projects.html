@@ -122,7 +122,42 @@ h1{font-family:var(--fd);font-weight:400;font-size:clamp(2.8rem,8vw,5.6rem);lett
 a:focus-visible,button:focus-visible{outline:2px solid #e0161f;outline-offset:3px;border-radius:6px}
 h1,h2,h3,h4,p,.fem,.fh,.d,.tx,.row h2{overflow-wrap:anywhere}
 </style>
-</head>
+<script>(function(){
+var HS={};
+function conv(box,rules){var add=[],i,r;for(i=0;i<rules.length;i++){r=rules[i];
+ if(r.type===1&&r.selectorText&&r.selectorText.indexOf(':hover')>-1)(r.selectorText.split(',').forEach(function(s){if(s.indexOf(':hover')>-1){var pre=s.split(':hover')[0].trim().split(/[\s>+~]+/).pop();if(pre&&!/[:\[]/.test(pre))HS[pre]=1}}),add.push(r.selectorText.replace(/:hover/g,'.th')+'{'+r.style.cssText+'}'));
+ else if(r.type===4)conv(r,r.cssRules)}
+ add.forEach(function(t){try{box.insertRule(t,box.cssRules.length)}catch(e){}})}
+function run(){[].forEach.call(document.styleSheets,function(s){var rl;try{rl=s.cssRules}catch(e){return}if(rl)conv(s,rl)})}
+var cur=[],tm;
+function clear(){cur.forEach(function(e){e.classList.remove('th')});cur=[]}
+function mark(e){var t=e.touches&&e.touches[0];if(!t)return;var n=document.elementFromPoint(t.clientX,t.clientY);clear();clearTimeout(tm);for(;n&&n.nodeType===1;n=n.parentElement){n.classList.add('th');cur.push(n)}}
+function end(){clearTimeout(tm);tm=setTimeout(clear,900)}
+addEventListener('touchstart',mark,{passive:true});addEventListener('touchmove',mark,{passive:true});
+addEventListener('touchend',end,{passive:true});addEventListener('touchcancel',end,{passive:true});
+function auto(){
+ var small=matchMedia('(hover:none)').matches||matchMedia('(pointer:coarse)').matches||innerWidth<=1000;
+ if(!small||!window.IntersectionObserver)return;
+ var seen=[],io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var n=e.target;n.classList.add('th');setTimeout(function(){n.classList.remove('th')},1500)})},{threshold:.6});
+ Object.keys(HS).forEach(function(s){var L;try{L=document.querySelectorAll(s)}catch(x){return}[].forEach.call(L,function(n){if(seen.indexOf(n)>-1||n.closest('nav,.menu,#cards,.cfs,.cfw,.stage'))return;if(n.getBoundingClientRect().height<36)return;seen.push(n);io.observe(n)})});
+ var st=document.querySelector('.stage');
+ if(st){(function t(){var r=st.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){st.classList.add('th');setTimeout(function(){st.classList.remove('th')},3200)}setTimeout(t,7000)})();setTimeout(function(){},0)}
+}
+function go(){run();setTimeout(auto,600)}
+if(document.readyState==='complete')go();else addEventListener('load',go);
+})();
+
+(function(){
+var coarse=matchMedia('(hover:none)').matches||matchMedia('(pointer:coarse)').matches;
+if(!coarse)return;
+var last=0;
+function fire(x,y){try{window.dispatchEvent(new PointerEvent('pointermove',{clientX:x,clientY:y,bubbles:true}))}catch(e){}}
+function tch(e){var t=e.touches&&e.touches[0];if(!t)return;last=Date.now();fire(t.clientX,t.clientY)}
+addEventListener('touchstart',tch,{passive:true});addEventListener('touchmove',tch,{passive:true});
+addEventListener('touchend',function(){last=Date.now()},{passive:true});
+(function loop(t){if(Date.now()-last>1200&&document.getElementById('swarm')){fire(innerWidth*(.5+.36*Math.sin(t/2300)),innerHeight*(.5+.3*Math.sin(t/1800+1.2)))}requestAnimationFrame(loop)})(0);
+})();
+</script></head>
 <body>
 <div class="nav"><a href="index.html" id="nm">Alok Kumar Burnwal</a><a class="bk" href="index.html#work">&larr; Back to home</a><a class="cm" href="contact.html">Contact me</a><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div>
 <div class="head"><div class="lab"><i></i><span>My recent projects</span></div><h1>Selected work</h1></div>
